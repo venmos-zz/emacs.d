@@ -179,6 +179,9 @@ before layers configuration."
   ;; display time
   (display-time-mode t)
 
+  ;; disable hl-line
+  (global-hl-line-mode -1)
+
   ;; helm-github-stars
   (setq helm-github-stars-username "venmos")
 

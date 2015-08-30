@@ -186,7 +186,7 @@ before layers configuration."
   (display-time-mode t)
 
   ;; disable hl-line
-  (global-hl-line-mode -1)
+  (global-hl-line-mode t)
 
   ;; helm-ls-git
   (setq helm-ff-lynx-style-map nil

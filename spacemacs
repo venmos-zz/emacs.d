@@ -18,12 +18,14 @@
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      chinese
+     osx
      html
      auto-completion
      php
      emacs-lisp
      git
      markdown
+     gnus
      org
      (ibuffer :variables ibuffer-group-buffers-by 'projects)
      (shell :variables
@@ -38,7 +40,7 @@
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages then consider to create a layer, you can also put the
    ;; configuration in `dotspacemacs/config'.
-   dotspacemacs-additional-packages '(mew mpv elfeed twittering-mode org-page simplenote2 hexrgb helm-github-stars)
+   dotspacemacs-additional-packages '(mpv elfeed twittering-mode org-page simplenote2 hexrgb helm-github-stars)
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
@@ -286,6 +288,33 @@ before layers configuration."
   (setq twittering-icon-mode t)
   (setq twittering-use-icon-storage t)
 
+  ;; gnus
+  ;; gmail
+  (setq gnus-secondary-select-methods
+        '(
+          (nnimap "gmail"
+                  (nnimap-address
+                   "imap.gmail.com")
+                  (nnimap-server-port 993)
+                  (nnimap-stream ssl))
+          ))
+
+  ;; Send email via Gmail:
+  (setq message-send-mail-function 'smtpmail-send-it
+        smtpmail-default-smtp-server "smtp.gmail.com")
+
+  ;; Archive outgoing email in Sent folder on imap.gmail.com:
+  (setq gnus-message-archive-method '(nnimap "imap.gmail.com")
+        gnus-message-archive-group "[Gmail]/Sent Mail")
+
+  ;; set return email address based on incoming email address
+  (setq gnus-posting-styles
+        '(((header "to" "venmos@fuck.gfw.es")
+           (address "venmos@fuck.gfw.es"))))
+
+  ;; store email in ~/gmail directory
+  (setq nnml-directory "~/.gmail")
+  (setq message-directory "~/.gmail")
 )
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.

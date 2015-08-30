@@ -170,6 +170,10 @@ before layers configuration."
   )
 (defun dotspacemacs/config ()
 
+  ;; my
+  (setq user-full-name "venmos")
+  (setq user-mail-address "venmos@fuck.gfw.es")
+
   ;; load-path
   (add-to-list 'load-path "~/.site-elisp/")
 

@@ -16,7 +16,7 @@
          "* TODO %?\n%U\n%a\n")
         ("s" "Study" entry (file+headline ,"~/.org/todo.org" "Study")
          "* TODO %?\n%U\n%a\n")
-				("S" "ShiTong" entry (file+headline ,"~/.org/todo.org" "ShiTong")
+				("w" "Work-Todo" entry (file+headline ,"~/.org/todo.org" "Work-Todo")
          "* TODO %?\n%U\n%a\n")
         ("n" "Note" entry (file+headline ,"~/.org/note.org" "Inbox")
          "* Note %?\n%U\n")))

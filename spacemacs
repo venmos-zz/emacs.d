@@ -40,7 +40,7 @@
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages then consider to create a layer, you can also put the
    ;; configuration in `dotspacemacs/config'.
-   dotspacemacs-additional-packages '(mpv elfeed twittering-mode org-page simplenote2 hexrgb helm-github-stars)
+   dotspacemacs-additional-packages '(mpv elfeed twittering-mode org-page simplenote2 hexrgb helm-github-stars helm-ls-git)
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
@@ -184,6 +184,13 @@ before layers configuration."
   ;; disable hl-line
   (global-hl-line-mode -1)
 
+  ;; helm-ls-git
+  (setq helm-ff-lynx-style-map nil
+        helm-input-idle-delay 0.1
+        helm-idle-delay 0.1)
+
+  (global-set-key (kbd "s-p") 'helm-browse-project)
+
   ;; helm-github-stars
   (setq helm-github-stars-username "venmos")
 
@@ -194,10 +201,6 @@ before layers configuration."
 
                                                              (setq pyim-dicts
                                                                    '((:name "dict1" :file "~/.site-elisp/plugin/pyim-bigdict.pyim" :coding utf-8-unix)))
-
-  ;; osx switch key
-  (setq mac-option-modifier 'hyper)
- ;;(setq mac-command-modifier 'meta)
 
   ;;
   (global-set-key (kbd "H->") 'mc/mark-next-like-this)

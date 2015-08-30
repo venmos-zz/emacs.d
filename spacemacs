@@ -203,7 +203,7 @@ before layers configuration."
                                                                    '((:name "dict1" :file "~/.site-elisp/plugin/pyim-bigdict.pyim" :coding utf-8-unix)))
 
   ;; google-translate
-  (global-set-key (kbd "H-8") 'google-translate-smooth-translate)
+  (global-set-key (kbd "s-8") 'google-translate-smooth-translate)
   (setq google-translate-translation-directions-alist
         '(("en" . "zh-CN") ("zh-CN" . "en")))
 

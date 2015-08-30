@@ -202,10 +202,6 @@ before layers configuration."
                                                              (setq pyim-dicts
                                                                    '((:name "dict1" :file "~/.site-elisp/plugin/pyim-bigdict.pyim" :coding utf-8-unix)))
 
-  ;;
-  (global-set-key (kbd "H->") 'mc/mark-next-like-this)
-  (global-set-key (kbd "H-<") 'mc/mark-previous-like-this)
-
   ;; google-translate
   (global-set-key (kbd "H-8") 'google-translate-smooth-translate)
   (setq google-translate-translation-directions-alist

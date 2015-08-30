@@ -232,9 +232,17 @@ before layers configuration."
   (require 'elfeed)
 
   (setq elfeed-feeds
-        '(("http://www.bilibili.com/rss-13.xml" BiliBili)
-          ("http://www.bilibili.com/rss-1.xml" BiliBili)
-          ("http://www.bilibili.com/rss-3.xml" BiliBili)
+        '(("http://www.hexieshe.com/feed/" acg)
+          ("http://zilongshanren.com/atom.xml" blog)
+          ("http://kelvinh.github.io/rss.xml" blog)
+          ("http://feeds.memect.com/web.rss.xml" blog)
+          ("http://rakuen.thec.me/PixivRss/weekly-20" acg)
+          ("http://rakuen.thec.me/PixivRss/weekly_r18-20" acg)
+          ("http://feeds.feedburner.com/tualatrix" blog)
+          ("http://www.emacswiki.org/cgi-bin/emacs?action=rss;showedit=1" emacs)
+          ("http://www.bilibili.com/rss-13.xml" bilibili)
+          ("http://www.bilibili.com/rss-1.xml" bilibili)
+          ("http://www.bilibili.com/rss-3.xml" bilibili)
           ))
 
   (defun elfeed-play-movie ()

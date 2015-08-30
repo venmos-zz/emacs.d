@@ -202,9 +202,8 @@ before layers configuration."
   (setq-default dotspacemacs-configuration-layers '((chinese :variables
                                                              chinese-enable-youdao-dict t
                                                              chinese-default-input-method 'pinyin)))
-
-                                                             (setq pyim-dicts
-                                                                   '((:name "dict1" :file "~/.site-elisp/plugin/pyim-bigdict.pyim" :coding utf-8-unix)))
+  (setq pyim-dicts
+        '((:name "dict1" :file "~/.site-elisp/plugin/pyim-bigdict.pyim" :coding utf-8-unix)))
 
   ;; google-translate
   (global-set-key (kbd "s-8") 'google-translate-smooth-translate)

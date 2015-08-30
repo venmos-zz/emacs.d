@@ -254,6 +254,19 @@ before layers configuration."
   (require 'yasnippet)
 
   (yas/load-directory "~/.site-elisp/plugin/yasnippets")
+  (setq yas-snippets-dir (expand-file-name "~/.emacs.d/plugin/yasnippets"))
+
+  (defun o-yass ()
+    (interactive)
+    (ido-find-file-in-dir yas-snippets-dir))
+
+  (defun l-yass ()
+    (interactive)
+    (yas-load-directory yas-snippets-dir))
+
+  (defun s-yass ()
+    (interactive)
+    (helm-ag yas-snippets-dir))
 
   ;;; erc
   (defun erc-freenode ()

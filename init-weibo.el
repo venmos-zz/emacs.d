@@ -3,7 +3,7 @@
 ;; http://venmos.com
 ;; venmos@fuck.gfw.es
 
-(add-to-list 'load-path "~/.site-elisp/plugin/weibo.emacs/")
+(add-to-list 'load-path "~/Gitst/venmos-emacs.d/plugin/weibo.emacs/")
 
 (require 'weibo)
 

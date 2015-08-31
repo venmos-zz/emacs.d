@@ -25,7 +25,6 @@
      emacs-lisp
      git
      markdown
-     gnus
      org
      (ibuffer :variables ibuffer-group-buffers-by 'projects)
      (shell :variables
@@ -42,7 +41,7 @@
    ;; configuration in `dotspacemacs/config'.
    dotspacemacs-additional-packages '(mpv elfeed twittering-mode org-page simplenote2 hexrgb helm-github-stars helm-ls-git eshell-autojump)
    ;; A list of packages and/or extensions that will not be install and loaded.
-   dotspacemacs-excluded-packages '()
+   dotspacemacs-excluded-packages '(gnus)
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
    ;; are declared in a layer which is not a member of
    ;; the list `dotspacemacs-configuration-layers'
@@ -77,8 +76,8 @@ before layers configuration."
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
                          monokai
-                         leuven
                          solarized-light
+                         leuven
                          spacemacs-dark
                          spacemacs-light
                          solarized-dark
@@ -181,6 +180,7 @@ before layers configuration."
   (require 'init-org)
   (require 'init-simplenote2)
   (require 'init-weibo)
+  (require 'init-day)
 
   ;; display time
   (display-time-mode t)
@@ -310,34 +310,6 @@ before layers configuration."
   ;; icons-config
   (setq twittering-icon-mode t)
   (setq twittering-use-icon-storage t)
-
-  ;; gnus
-  ;; gmail
-  (setq gnus-secondary-select-methods
-        '(
-          (nnimap "gmail"
-                  (nnimap-address
-                   "imap.gmail.com")
-                  (nnimap-server-port 993)
-                  (nnimap-stream ssl))
-          ))
-
-  ;; Send email via Gmail:
-  (setq message-send-mail-function 'smtpmail-send-it
-        smtpmail-default-smtp-server "smtp.gmail.com")
-
-  ;; Archive outgoing email in Sent folder on imap.gmail.com:
-  (setq gnus-message-archive-method '(nnimap "imap.gmail.com")
-        gnus-message-archive-group "[Gmail]/Sent Mail")
-
-  ;; set return email address based on incoming email address
-  (setq gnus-posting-styles
-        '(((header "to" "venmos@fuck.gfw.es")
-           (address "venmos@fuck.gfw.es"))))
-
-  ;; store email in ~/gmail directory
-  (setq nnml-directory "~/.gmail")
-  (setq message-directory "~/.gmail")
 )
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.

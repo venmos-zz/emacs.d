@@ -1,0 +1,5 @@
+# name: Gist
+# contributor: Peng Deng <dengpeng@gmail.com>
+# key: ogist
+# --
+{% gist ${1:gist_number} %}$0

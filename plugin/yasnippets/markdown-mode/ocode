@@ -1,0 +1,8 @@
+# name: Code
+# contributor: Peng Deng <dengpeng@gmail.com>
+# key: ocode
+# --
+{% codeblock $1%}
+$2
+{% endcodeblock %}
+$3

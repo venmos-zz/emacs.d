@@ -1,0 +1,5 @@
+# name: Qiniu Img
+# contributor: Peng Deng <dengpeng@gmail.com>
+# key: qimg
+# --
+{% img http://venmos-com.qiniudn.com/${1:name}.jpg-default ${2:imgname} %}$3

@@ -1,0 +1,6 @@
+# name: PHP
+# key: ?php
+# --
+<?php
+    $0
+?>

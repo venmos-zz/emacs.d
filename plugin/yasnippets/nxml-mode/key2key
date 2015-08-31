@@ -1,0 +1,10 @@
+# contributor: Anders Bach Nielsen <abachn@abachn.net>
+# name: key2key
+# key: key2key
+# --
+<item>
+    <name>$1</name>
+    <identifier>private.$2_to_$3</identifier>
+    <autogen>__KeyToKey__ KeyCode::$4, KeyCode::$5</autogen>
+</item>
+$0

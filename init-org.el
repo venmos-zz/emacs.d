@@ -3,22 +3,22 @@
 ;; http://venmos.com
 ;; venmos@fuck.gfw.es
 
-(setq org-directory "~/.org/")
-(setq org-agenda-files (list "~/.org/todo.org"))
-(setq org-default-notes-file "~/.org/note.org")
+(setq org-directory "~/Dropbox/Org/")
+(setq org-agenda-files (list "~/Dropbox/Org/todo.org"))
+(setq org-default-notes-file "~/Dropbox/Org/note.org")
 
 (setq org-capture-templates
-      `(("i" "Inbox" entry (file+headline ,"~/.org/todo.org" "Inbox")
+      `(("i" "Inbox" entry (file+headline ,"~/Dropbox/Org/todo.org" "Inbox")
          "* TODO %?\n%U\n%a\n")
-        ("e" "Emacs" entry (file+headline ,"~/.org/todo.org" "Emacs")
+        ("e" "Emacs" entry (file+headline ,"~/Dropbox/Org/todo.org" "Emacs")
          "* TODO %?\n%U\n%a\n")
-				("w" "Wiki" entry (file+headline ,"~/.org/todo.org" "Wiki")
+				("w" "Wiki" entry (file+headline ,"~/Dropbox/Org/todo.org" "Wiki")
          "* TODO %?\n%U\n%a\n")
-        ("s" "Study" entry (file+headline ,"~/.org/todo.org" "Study")
+        ("s" "Study" entry (file+headline ,"~/Dropbox/Org/todo.org" "Study")
          "* TODO %?\n%U\n%a\n")
-				("w" "Work-Todo" entry (file+headline ,"~/.org/todo.org" "Work-Todo")
+				("w" "Work-Todo" entry (file+headline ,"~/Dropbox/Org/todo.org" "Work-Todo")
          "* TODO %?\n%U\n%a\n")
-        ("n" "Note" entry (file+headline ,"~/.org/note.org" "Inbox")
+        ("n" "Note" entry (file+headline ,"~/Dropbox/Org/note.org" "Inbox")
          "* Note %?\n%U\n")))
 
 (require 'org-crypt)

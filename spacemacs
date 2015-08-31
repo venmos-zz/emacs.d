@@ -175,7 +175,7 @@ before layers configuration."
   (setq user-mail-address "venmos@fuck.gfw.es")
 
   ;; load-path
-  (add-to-list 'load-path "~/.site-elisp/")
+  (add-to-list 'load-path "~/Gitst/venmos-emacs.d/")
 
   (require 'init-org-page)
   (require 'init-org)
@@ -203,7 +203,7 @@ before layers configuration."
                                                              chinese-enable-youdao-dict t
                                                              chinese-default-input-method 'pinyin)))
   (setq pyim-dicts
-        '((:name "dict1" :file "~/.site-elisp/plugin/pyim-bigdict.pyim" :coding utf-8-unix)))
+        '((:name "dict1" :file "~/Gitst/venmos-emacs.d/plugin/pyim-bigdict.pyim" :coding utf-8-unix)))
 
   ;; google-translate
   (global-set-key (kbd "s-8") 'google-translate-smooth-translate)
@@ -260,8 +260,8 @@ before layers configuration."
   ;; yasnippet
   (require 'yasnippet)
 
-  (yas/load-directory "~/.site-elisp/plugin/yasnippets")
-  (setq yas-snippets-dir (expand-file-name "~/.site-elisp/plugin/yasnippets"))
+  (yas/load-directory "~/Gitst/venmos-emacs.d/plugin/yasnippets")
+  (setq yas-snippets-dir (expand-file-name "~/Gitst/venmos-emacs.d/plugin/yasnippets"))
 
   (defun o-yass ()
     (interactive)

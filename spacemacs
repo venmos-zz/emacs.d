@@ -18,7 +18,7 @@
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      chinese
-     osx
+     ded
      html
      auto-completion
      php
@@ -34,6 +34,7 @@
      syntax-checking
      version-control
      irc
+     colors
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -75,10 +76,10 @@ before layers configuration."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
-                         monokai
                          solarized-light
-                         leuven
+                         monokai
                          spacemacs-dark
+                         leuven
                          spacemacs-light
                          solarized-dark
                          zenburn

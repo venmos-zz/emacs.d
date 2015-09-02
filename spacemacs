@@ -182,7 +182,7 @@ before layers configuration."
   (require 'init-simplenote2)
 ;;  (require 'init-weibo)
   (require 'init-day)
-  (require 'init-eshel)
+  (require 'init-eshell)
 
   ;; display time
   (display-time-mode t)

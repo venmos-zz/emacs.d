@@ -39,7 +39,7 @@
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages then consider to create a layer, you can also put the
    ;; configuration in `dotspacemacs/config'.
-   dotspacemacs-additional-packages '(mpv elfeed twittering-mode org-page simplenote2 hexrgb helm-github-stars helm-ls-git eshell-autojump)
+   dotspacemacs-additional-packages '(mpv elfeed twittering-mode org-page hexrgb helm-github-stars helm-ls-git eshell-autojump)
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '(gnus)
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
@@ -176,7 +176,6 @@ before layers configuration."
 
   (require 'init-org-page)
   (require 'init-org)
-  (require 'init-simplenote2)
   (require 'init-weibo)
   (require 'init-day)
   (require 'init-eshell)

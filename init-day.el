@@ -36,5 +36,6 @@
   (if (equal dayone-buffer (buffer-name))
       (kill-buffer (current-buffer))))
 
+;; provide
 (provide 'init-day)
 ;;; init-dayone.el ends here

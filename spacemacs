@@ -180,7 +180,7 @@ before layers configuration."
   (require 'init-org-page)
   (require 'init-org)
   (require 'init-simplenote2)
-;;  (require 'init-weibo)
+  (require 'init-weibo)
   (require 'init-day)
   (require 'init-eshell)
 

@@ -18,7 +18,6 @@
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      osx
-     chinese
      html
      auto-completion
      php

@@ -1,4 +1,3 @@
-
 ;; for SpacEmacs https://github.com/syl20bnr/spacemacs
 ;; venmos .site-elisp/init-eshell.el
 ;; http://venmos.com

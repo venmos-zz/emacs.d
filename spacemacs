@@ -195,13 +195,6 @@ before layers configuration."
   ;; helm-github-stars
   (setq helm-github-stars-username "venmos")
 
-  ;; chinese layer
-  (setq-default dotspacemacs-configuration-layers '((chinese :variables
-                                                             chinese-enable-youdao-dict t
-                                                             chinese-default-input-method 'pinyin)))
-  (setq pyim-dicts
-        '((:name "dict1" :file "~/Gitst/venmos-emacs.d/plugin/pyim-bigdict.pyim" :coding utf-8-unix)))
-
   ;; google-translate
   (global-set-key (kbd "s-8") 'google-translate-smooth-translate)
   (setq google-translate-translation-directions-alist

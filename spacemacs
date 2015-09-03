@@ -32,7 +32,6 @@
      spell-checking
      syntax-checking
      version-control
-     irc
      colors
      )
    ;; List of additional packages that will be installed without being

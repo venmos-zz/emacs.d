@@ -178,6 +178,7 @@ before layers configuration."
   (require 'init-weibo)
   (require 'init-day)
   (require 'init-eshell)
+  (require 'init-tabbar)
   (require 'unicad)
 
   ;; display time

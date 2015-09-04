@@ -302,6 +302,10 @@ before layers configuration."
   ;; icons-config
   (setq twittering-icon-mode t)
   (setq twittering-use-icon-storage t)
+
+  ;; file-mode
+  (add-to-list 'auto-mode-alist '("zshrc" . conf-mode))
+  (add-to-list 'auto-mode-alist '("\\.html\\'" . html-mode))
 )
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.

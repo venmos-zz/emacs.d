@@ -52,8 +52,8 @@ Optional argument REVERSED default is move backward, if reversed is non-nil move
 (setq uniquify-buffer-name-style 'forward)
 (tabbar-mode t)
 ;; shortcuts
-(global-set-key (kbd "H-{") 'tabbar-backward)
-(global-set-key (kbd "H-}") 'tabbar-forward)
+(global-set-key (kbd "s-{") 'tabbar-backward)
+(global-set-key (kbd "s-}") 'tabbar-forward)
 (global-set-key (kbd "C-c [") 'tabbar-backward-group)
 (global-set-key (kbd "C-c ]") 'tabbar-forward-group)
 ;; hide-header-button
@@ -75,19 +75,19 @@ Default is t."
   :group 'tabbar)
 ;; tabbar-theme-configure
 (set-face-attribute 'tabbar-default nil
-         :background "#ffffff"
+         :background "#272822"
          :family "Source Code Pro"
-         :foreground "#ffffff"
+         :foreground "#272822"
          :height 1)
 (set-face-attribute 'tabbar-unselected nil
          :inherit 'tabbar-default
-         :background "#ffffff"
-         :foreground "#89BEB7"
+         :background "#272822"
+         :foreground "#75715D"
          :box nil)
 (set-face-attribute 'tabbar-selected nil
          :inherit 'tabbar-default
-         :background "#EEAD0D"
-         :foreground "#ffffff"
+         :background "#EEAD0E"
+         :foreground "#272822"
          :box nil)
 (set-face-attribute 'tabbar-separator nil
          :height 1)

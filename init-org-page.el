@@ -5,7 +5,7 @@
 
 (require 'org-page)
 
-(setq op/repository-directory "~/Github/venmos.github.io")
+(setq op/repository-directory "~/Dropbox/Org/venmos.github.io")
 (setq op/site-domain "http://venmos.com/")
 
 (setq op/personal-disqus-shortname "venomblog")

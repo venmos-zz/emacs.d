@@ -16,7 +16,7 @@
 (setq op/site-sub-title "A website framework for hackers.")
 
 (setq op/repository-org-branch "source")
-(setq op/repository-html-branch "master")
+(setq op/repository-html-branch "gitcafe-pages")
 
 (setq op/personal-github-link "https://github.com/venmos")
 

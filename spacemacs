@@ -74,9 +74,9 @@ before layers configuration."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
+                         spacemacs-dark
                          monokai
                          spacemacs-light
-                         spacemacs-dark
                          solarized-light
                          solarized-dark
                          )
@@ -164,6 +164,7 @@ before layers configuration."
    )
   ;; User initialization goes here
   )
+
 (defun dotspacemacs/config ()
 
   ;; my
@@ -185,7 +186,7 @@ before layers configuration."
   (display-time-mode t)
 
   ;; disable hl-line
-  (global-hl-line-mode -1)
+  (global-hl-line-mode t)
 
   ;; helm-ls-git
   (setq helm-ff-lynx-style-map nil
@@ -226,6 +227,7 @@ before layers configuration."
   (setq elfeed-feeds
         '(("http://www.hexieshe.com/feed/" acg)
           ("http://zilongshanren.com/atom.xml" blog)
+          ("feed://venmos.com/rss.xml" blog)
           ("http://kelvinh.github.io/rss.xml" blog)
           ("http://feeds.memect.com/web.rss.xml" blog)
           ("http://rakuen.thec.me/PixivRss/weekly-20" acg)
@@ -306,10 +308,7 @@ before layers configuration."
   ;; file-mode
   (add-to-list 'auto-mode-alist '("zshrc" . conf-mode))
   (add-to-list 'auto-mode-alist '("\\.html\\'" . html-mode))
-
-  ;; file-mode
-  (add-to-list 'auto-mode-alist '("zshrc" . conf-mode))
-  (add-to-list 'auto-mode-alist '("\\.html\\'" . html-mode))
 )
+
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.

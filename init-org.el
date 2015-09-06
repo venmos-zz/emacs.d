@@ -8,13 +8,13 @@
 (setq org-default-notes-file "~/Dropbox/Org/note.org")
 
 (setq org-capture-templates
-      `(("t" "TODO" entry (file+headline ,"~/Dropbox/Org/todo.org" "Inbox")
+      `(("t" "TODO" entry (file+headline ,"~/Dropbox/Org/gtd/todo.org" "Inbox")
          "* TODO :: %?\n%T\n%a\n")
-				("p" "Passwd" entry (file+headline ,"~/Dropbox/Org/passwd.org" "Inbox")
+				("p" "Passwd" entry (file+headline ,"~/Dropbox/Org/db/passwd.org" "Inbox")
          "* Passwd :: %?\n%U\n")
-				("N" "Network" entry (file+headline ,"~/Dropbox/Org/network.org" "Inbox")
+				("N" "Network" entry (file+headline ,"~/Dropbox/Org/db/network.org" "Inbox")
          "* Network :: %?\n%U\n")
-        ("n" "Note" entry (file+headline ,"~/Dropbox/Org/note.org" "Inbox")
+        ("n" "Note" entry (file+headline ,"~/Dropbox/Org/note/note.org" "Inbox")
          "* Note :: %?\n%U\n")))
 
 (setq org-todo-keywords

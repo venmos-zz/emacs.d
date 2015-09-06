@@ -75,19 +75,19 @@ Default is t."
   :group 'tabbar)
 ;; tabbar-theme-configure
 (set-face-attribute 'tabbar-default nil
-         :background "#272822"
+         :background "#FDF6E3"
          :family "Source Code Pro"
-         :foreground "#272822"
+         :foreground "#FDF6E3"
          :height 1)
 (set-face-attribute 'tabbar-unselected nil
          :inherit 'tabbar-default
-         :background "#272822"
-         :foreground "#75715D"
+         :background "#FDF6E3"
+         :foreground "#657B83"
          :box nil)
 (set-face-attribute 'tabbar-selected nil
          :inherit 'tabbar-default
          :background "#EEAD0E"
-         :foreground "#272822"
+         :foreground "#FDF6E3"
          :box nil)
 (set-face-attribute 'tabbar-separator nil
          :height 1)

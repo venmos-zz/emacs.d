@@ -17,6 +17,7 @@
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
+     common-lisp
      osx
      html
      auto-completion
@@ -165,9 +166,11 @@ before layers configuration."
   ;; User initialization goes here
   )
 
-(defun dotspacemacs/config ()
+(defun dotspacemacs/user-init ()
+)
 
-  ;; my
+(defun dotspacemacs/user-config ()
+ ;; my
   (setq user-full-name "venmos")
   (setq user-mail-address "venmos@fuck.gfw.es")
 
@@ -181,6 +184,9 @@ before layers configuration."
   (require 'init-eshell)
   (require 'init-tabbar)
   (require 'unicad)
+
+  ;; sbcl
+  (setq inferior-lisp-program "/usr/local/bin/sbcl")
 
   ;; display time
   (display-time-mode t)
@@ -305,10 +311,6 @@ before layers configuration."
   (setq twittering-icon-mode t)
   (setq twittering-use-icon-storage t)
 
-  ;; file-mode
-  (add-to-list 'auto-mode-alist '("zshrc" . conf-mode))
-  (add-to-list 'auto-mode-alist '("\\.html\\'" . html-mode))
 )
-
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.

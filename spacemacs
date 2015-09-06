@@ -189,10 +189,13 @@ before layers configuration."
   (setq inferior-lisp-program "/usr/local/bin/sbcl")
 
   ;; display time
-  (display-time-mode t)
+  (setq mode-line-org-clock-current-task t)
+
+  ;; display battery
+  (setq mode-line-battery t)
 
   ;; disable hl-line
-  (global-hl-line-mode t)
+  (global-hl-line-mode -1)
 
   ;; helm-ls-git
   (setq helm-ff-lynx-style-map nil

@@ -75,11 +75,11 @@ before layers configuration."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
-                         solarized-light
-                         spacemacs-dark
                          monokai
-                         spacemacs-light
+                         solarized-light
                          solarized-dark
+                         spacemacs-light
+                         spacemacs-dark
                          )
    ;; If non nil the cursor color matches the state color.
    dotspacemacs-colorize-cursor-according-to-state t
@@ -182,17 +182,15 @@ before layers configuration."
   (require 'init-weibo)
   (require 'init-day)
   (require 'init-eshell)
-  (require 'init-tabbar)
+;;  (require 'init-tabbar)
   (require 'unicad)
+  (require 'eshell-autojump)
 
   ;; sbcl
   (setq inferior-lisp-program "/usr/local/bin/sbcl")
 
-  ;; display time
-  (setq mode-line-org-clock-current-task t)
-
-  ;; display battery
-  (setq mode-line-battery t)
+  ;;
+  (setq powerline-default-separator 'zigzag)
 
   ;; disable hl-line
   (global-hl-line-mode -1)

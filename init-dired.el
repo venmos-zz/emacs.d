@@ -3,7 +3,7 @@
 ;; http://venmos.com
 ;; venmos@fuck.gfw.es
 
-(add-to-list 'load-path "~/.site-elisp/plugin/Emacs-color-dired")
+(add-to-list 'load-path "~/Gitst/venmos-emacs.d")
 ;; color-dired by https://github.com/mhayashi1120/Emacs-color-dired
 
 (require 'dired+)
@@ -570,7 +570,7 @@ If not nil, use TYPE-FOR-FACE instead of TYPE to derive the symbol for the assoc
 (define-key dired-mode-map (kbd "M-C-s") 'dired-isearch-forward-regexp)
 (define-key dired-mode-map (kbd "M-C-r") 'dired-isearch-backward-regexp)
 
-(define-key dired-mode-map (kbd "r") 'dired-efap)
+(define-key dired-mode-map (kbd "s-r") 'dired-efap)
 
 (eval-after-load 'dired '(progn (require 'dired-filetype-face)))
 (setq dired-recursive-deletes 'top)
@@ -598,29 +598,29 @@ If not nil, use TYPE-FOR-FACE instead of TYPE to derive the symbol for the assoc
 ;; dired-color
 
 ;; 定义几种文件扩展名
-(defvar text-file-name-extensions
-	(purecopy '("txt" "md" "org")))
-(defvar doc-file-name-extensions
-	(purecopy '("pdf" "doc" "docx" "xls" "xlsx" "ppt" "xml" "htm" "html")))
-(defvar code-file-name-extensions
-	(purecopy '("h" "c" "cxx" "cpp" "el" "pl" "py" "pm" "el")))
-(defvar audio-file-name-extensions
-	(purecopy '("mp3" "ogg" "wav" "wma" "flac" "aac" "ape" "aif")))
-(defvar video-file-name-extensions
-	(purecopy '("mp4" "mov" "mkv" "avi" "rmvb" "rm" "wmv" "3gp" "vob"
-							"mpg" "mpeg" "divx" "ogm" "ogv" "asf" "flv" "webm")))
- 
+;;(defvar text-file-name-extensions
+	;;(purecopy '("txt" "md" "org")))
+;;(defvar doc-file-name-extensions
+	;;(purecopy '("pdf" "doc" "docx" "xls" "xlsx" "ppt" "xml" "htm" "html")))
+;;(defvar code-file-name-extensions
+	;;(purecopy '("h" "c" "cxx" "cpp" "el" "pl" "py" "pm" "el")))
+;;(defvar audio-file-name-extensions
+	;;(purecopy '("mp3" "ogg" "wav" "wma" "flac" "aac" "ape" "aif")))
+;;(defvar video-file-name-extensions
+	;;(purecopy '("mp4" "mov" "mkv" "avi" "rmvb" "rm" "wmv" "3gp" "vob"
+							;;"mpg" "mpeg" "divx" "ogm" "ogv" "asf" "flv" "webm")))
+ ;;
 ;; 使用 dired-rainbow 定义 dired 的颜色
-(dired-rainbow-define text "#78675D"
-  										text-file-name-extensions)
-(dired-rainbow-define doc "#4FBDF2"
-  										doc-file-name-extensions)
-(dired-rainbow-define code "#2AA19D"
-  										code-file-name-extensions)
-(dired-rainbow-define audio "#6638F0"
-  										audio-file-name-extensions)
-(dired-rainbow-define video "#F78AE0"
-  										video-file-name-extensions)
+;;(dired-rainbow-define text "#78675D"
+  										;;text-file-name-extensions)
+;;(dired-rainbow-define doc "#4FBDF2"
+  										;;doc-file-name-extensions)
+;;(dired-rainbow-define code "#2AA19D"
+  										;;code-file-name-extensions)
+;;(dired-rainbow-define audio "#6638F0"
+  										;;audio-file-name-extensions)
+;;(dired-rainbow-define video "#F78AE0"
+  ;;										video-file-name-extensions)
 
 ;; mpv player
 (define-key dired-mode-map (kbd "P")

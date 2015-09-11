@@ -321,6 +321,7 @@ before layers configuration."
   (setq w3m-default-toggle-inline-images t)
   (setq w3m-command-arguments '("-cookie" "-F"))
   (setq w3m-use-cookies t)
+  (setq browse-url-browser-function 'w3m-browse-url)
   (setq w3m-view-this-url-new-session-in-background t)
 )
 ;; Do not write anything past this comment. This is where Emacs will

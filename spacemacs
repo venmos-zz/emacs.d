@@ -17,32 +17,37 @@
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     dash
-     common-lisp
+     ;; emacs
      osx
-     html
      auto-completion
-     php
-     emacs-lisp
-     git
-     markdown
-     org
-     evernote
-     w3m
+     spell-checking
+     syntax-checking
+     version-control
      (ibuffer :variables ibuffer-group-buffers-by 'projects)
      (shell :variables
             shell-default-shell 'ansi-term
             shell-default-term-shell "/usr/local/bin/zsh")
-     spell-checking
-     syntax-checking
-     version-control
+     ;; languages
+     html
+     php
+     common-lisp
+     markdown
+     emacs-lisp
+     ruby
+     ;; tools
+     dash
+     git
+     org
+     evernote
      colors
+     w3m
+     org-page
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages then consider to create a layer, you can also put the
    ;; configuration in `dotspacemacs/config'.
-   dotspacemacs-additional-packages '(mpv elfeed twittering-mode org-page hexrgb helm-github-stars helm-ls-git eshell-autojump dired+ dired-single dired-rainbow color-moccur dired-efap)
+   dotspacemacs-additional-packages '(mpv elfeed twittering-mode hexrgb helm-github-stars helm-ls-git eshell-autojump dired+ dired-single dired-rainbow color-moccur dired-efap)
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that

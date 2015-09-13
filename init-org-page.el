@@ -3,7 +3,6 @@
 ;; http://venmos.com
 ;; venmos@fuck.gfw.es
 
-(require 'org-page)
 
 (setq op/repository-directory "~/Dropbox/Org/venmos.github.io")
 (setq op/site-domain "http://venmos.com/")

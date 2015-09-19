@@ -4,8 +4,8 @@
 ;; venmos@fuck.gfw.es
 
 (setq org-directory "~/Dropbox/Org/")
-(setq org-agenda-files (list "~/Dropbox/Org/todo.org"))
-(setq org-default-notes-file "~/Dropbox/Org/note.org")
+(setq org-agenda-files (list "~/Dropbox/Org/gtd/todo.org"))
+(setq org-default-notes-file "~/Dropbox/Org/note/note.org")
 
 (setq org-capture-templates
       `(("t" "TODO" entry (file+headline ,"~/Dropbox/Org/gtd/todo.org" "Inbox")

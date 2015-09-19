@@ -25,6 +25,8 @@
      version-control
      (ibuffer :variables ibuffer-group-buffers-by 'projects)
      (shell :variables
+            shell-protect-eshell-prompt nil
+            shell-enable-smart-eshell t
             shell-default-shell 'ansi-term
             shell-default-term-shell "/usr/local/bin/zsh")
      ;; languages
@@ -47,7 +49,7 @@
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages then consider to create a layer, you can also put the
    ;; configuration in `dotspacemacs/config'.
-   dotspacemacs-additional-packages '(mpv elfeed twittering-mode hexrgb helm-github-stars helm-ls-git eshell-autojump dired+ dired-single dired-rainbow color-moccur dired-efap)
+   dotspacemacs-additional-packages '(mpv elfeed twittering-mode hexrgb helm-github-stars helm-ls-git eshell-autojump dired+ dired-single dired-rainbow color-moccur dired-efap rvm yaml-mode)
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
@@ -321,6 +323,7 @@ before layers configuration."
   (setq twittering-use-icon-storage t)
 
   ;; w3m
+  (require 'w3m)
   (setq w3m-home-page "http://www.google.com")
   (setq w3m-default-display-inline-images t)
   (setq w3m-default-toggle-inline-images t)
@@ -328,6 +331,12 @@ before layers configuration."
   (setq w3m-use-cookies t)
   (setq browse-url-browser-function 'w3m-browse-url)
   (setq w3m-view-this-url-new-session-in-background t)
+
+  ;; ruby
+  (require 'inf-ruby)
+  (setq inf-ruby-default-implementation "pry")
+  (setq inf-ruby-eval-binding "Pry.toplevel_binding")
+  (add-hook 'inf-ruby-mode-hook 'ansi-color-for-comint-mode-on)
 )
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.

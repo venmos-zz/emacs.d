@@ -27,7 +27,7 @@
      (shell :variables
             shell-protect-eshell-prompt nil
             shell-enable-smart-eshell t
-            shell-default-shell 'ansi-term
+            shell-default-shell 'shell
             shell-default-term-shell "/usr/local/bin/zsh")
      ;; languages
      html

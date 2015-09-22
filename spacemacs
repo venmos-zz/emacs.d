@@ -199,8 +199,11 @@ before layers configuration."
   ;; sbcl
   (setq inferior-lisp-program "/usr/local/bin/sbcl")
 
-  ;;
+  ;; mode-line theme
   (setq powerline-default-separator 'zigzag)
+
+  ;; enable mode-line-battery
+  (spacemacs/toggle-mode-line-battery-on)
 
   ;; disable hl-line
   (global-hl-line-mode -1)

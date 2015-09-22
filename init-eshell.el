@@ -2,6 +2,7 @@
 ;; venmos .site-elisp/init-eshell.el
 ;; http://venmos.com
 ;; venmos@fuck.gfw.es
+;; from https://github.com/pengpengxp
 
 (defun eshell/lg (&rest args)
   "因为经常使用`ls|grep xxx'这样的命令，就自己包装了一个"

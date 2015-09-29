@@ -28,7 +28,10 @@
             shell-protect-eshell-prompt nil
             shell-enable-smart-eshell t
             shell-default-shell 'shell
-            shell-default-term-shell "/usr/local/bin/zsh")
+            shell-default-term-shell "/usr/local/bin/zsh"
+            shell-default-position 'bottom
+            shell-default-height 30
+            )
      ;; languages
      html
      php
@@ -80,16 +83,16 @@ before layers configuration."
    dotspacemacs-startup-banner 'official
    ;; List of items to show in the startup buffer. If nil it is disabled.
    ;; Possible values are: `recents' `bookmarks' `projects'."
-   dotspacemacs-startup-lists '(recents projects)
+   dotspacemacs-startup-lists '(recents projects bookmarks)
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
+                         monokai
                          solarized-light
                          solarized-dark
                          spacemacs-light
                          spacemacs-dark
-                         monokai
                          )
    ;; If non nil the cursor color matches the state color.
    dotspacemacs-colorize-cursor-according-to-state t
@@ -205,7 +208,7 @@ before layers configuration."
   ;; enable mode-line-battery
   (spacemacs/toggle-mode-line-battery-on)
 
-  ;; disable hl-line
+  ;; hl-line
   (global-hl-line-mode -1)
 
   ;; helm-ls-git

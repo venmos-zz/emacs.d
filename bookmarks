@@ -29,7 +29,7 @@
  (position . 8944))
 ("org-capture-last-stored"
  (filename . "~/Dropbox/Org/gtd/todo.org")
- (front-context-string . "** TODO :: 拒绝所有游")
+ (front-context-string . "** TODO :: 迁移Git")
  (rear-context-string . "#+END:\n\n* Inbox\n")
  (position . 1391))
 )

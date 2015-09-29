@@ -1,0 +1,35 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("htdocs"
+ (filename . "/Applications/MAMP/htdocs/")
+ (front-context-string . "bbs\n  drwxr-xr-x")
+ (rear-context-string . "9K Sep 26 14:11 ")
+ (position . 225))
+("network.org"
+ (filename . "~/Dropbox/Org/db/network.org")
+ (front-context-string . "Networking Noteb")
+ (rear-context-string)
+ (position . 1))
+("user-rule.txt"
+ (filename . "~/.ShadowsocksX/user-rule.txt")
+ (front-context-string . "\n||google.com\n||")
+ (rear-context-string . "lter-cheatsheet\n")
+ (position . 96))
+("passwd.org"
+ (filename . "~/Dropbox/Org/db/passwd.org")
+ (front-context-string . ":\nServer ID => 1")
+ (rear-context-string . "         :secret")
+ (position . 10186))
+("org-refile-last-stored"
+ (filename . "~/Dropbox/Org/gtd/todo.org")
+ (front-context-string . "** TODO :: 拒绝所有游")
+ (rear-context-string . "tcn 不登录隐藏首页主题]]\n")
+ (position . 8944))
+("org-capture-last-stored"
+ (filename . "~/Dropbox/Org/gtd/todo.org")
+ (front-context-string . "** TODO :: 拒绝所有游")
+ (rear-context-string . "#+END:\n\n* Inbox\n")
+ (position . 1391))
+)

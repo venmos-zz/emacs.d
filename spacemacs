@@ -211,6 +211,9 @@ before layers configuration."
   ;; hl-line
   (global-hl-line-mode -1)
 
+  ;; disable git symlinks warning
+  (setq vc-follow-symlinks t)
+
   ;; helm-ls-git
   (setq helm-ff-lynx-style-map nil
         helm-input-idle-delay 0.1
